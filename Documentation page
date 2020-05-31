@@ -1,0 +1,143 @@
+<!---Template of a page with documentation. As an example I used procurement savings process-->
+
+<head>
+  <style>
+    body {
+      line-height: 1.5;
+    }
+    header {
+      font-size: 18px;
+    }
+    p {
+      margin: 0px;
+    }
+    code {
+      margin: 10px;
+      padding: 15px;
+      border-radius: 5px;
+      background-color: #f7f7f7;
+      line-height: 2;
+      white-space: pre;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+      display: block;
+    }
+    li {
+      margin: 0px 0px 0px 20px;
+    }
+    h1 {
+      margin:15px;
+    }
+    a {
+      padding: 10px 30px;
+      cursor: pointer;
+      display: block;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      border-color: rgba(0,22,22,0.4);
+      text-decoration: none;
+      color: black;
+    }
+    #main-doc {
+      position: absolute;
+      padding: 20px;
+      margin-left: 300px;
+      margin bottom: 100px;
+    }
+    .main-section {
+      margin: 15px;
+      font-size: 0.9em;
+    }
+    #Analyse {
+      display: block;
+    }
+    #Identify_opportunities {
+      display: block;
+    }
+    #Engage_stakeholders {
+      display: block;
+    }
+    #Implement_initiatives {
+      display: block;
+    }
+    #Achieve_and_report_results {
+      display: block;
+    }
+    #navbar {
+      position: fixed;
+      height: 100%;
+      min-width: 290px;
+      width: 300px;
+      border-top: 1px solid;
+      border-bottom: 2px solid;
+      border-right: solid;
+      border-color: rgba(0,22,22,0.4);
+    }
+    #navbar a {
+      display: block;
+      padding: 10px 30px;
+      cursor: pointer;
+    }
+    .nav-link {
+      display: block;
+    }
+    @media only screen and (max-width: 815px;) {
+      #navbar {
+        border: 1px solid;
+        height: 207px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header style="text-align: center; padding: 10px; font-weight: bold">Content</header>
+    <a href="#Analyse" class="nav-link">Analyse</a>
+    <a href="#Identify_opportunities" class="nav-link">Identify opportunities</a>
+    <a href="#Engage_stakeholders" class="nav-link">Engage stakeholders</a>
+    <a href="#Implement_initiatives" class="nav-link">Implement initiatives</a>
+    <a href="#Achieve_and_report_results" class="nav-link">Achieve and report results</a>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Analyse">
+      <h1 style="text-align: center">Procurement savings guidlines to deliver results</h1>
+      <header>Analyse</header>
+      <p>The first step is to complete both internat and external analysis. Internal analysis focuses on analysing your spend while external analysis focuses on market and suppliers. Together they should give you good overview of your current situation and potential areas for development.</p>
+    </section>
+    <section class="main-section" id="Identify_opportunities">
+      <header>Identify opportunities </header>
+      <p>After analysis is completed you should try to identify available opportunities for new initiatives. There are three major types of initiatives:</p>
+      <p style="margin: 0px 5px";>- Local procurement initiatives. These initiatives usually connected with expiring contracts or significant uncontracted spend.</p>
+      <p style="margin: 0px 5px">- Local E2E initiatives. These initiatives focuses not only on price of specific products and services but on whole total cost of ownership. The best way to identify such initiatives is to organize E2E workshop together with relevant stakeholders</p>
+      <p style="margin: 0px 5px">- Global procurement initiatives. As there is a global center of excellence who constantly drives some initiatives there is an opportunity to join one of their projects</p>
+    </section>
+    <section class="main-section" id="Engage_stakeholders">
+      <header>Engage stakeholders</header>
+      <p>In order to start implementation of certain initiatives it is required to get buy in from stakeholders. In some situations you would also need specific support from stakeholders that is only possible if they are onboarded and aligned with your initiative. There are many different approaches to managing stakeholder and there is no "right one". However we can provide some tricks:</p>
+      <li>Understand what your stakeholders want to achieve, their objectives</li>
+      <li>Create value proposition for stakeholders the is aligned with their objectives</li>
+      <li>Organize initial engagement to get to know each other, indicate your value proposition and align on objective</li>
+      <li>Establish regular communications to discuss key topics</li>
+      <li>Keep stakeholders informed about events and information they want to know</li>
+    </section>
+    <section class="main-section" id="Implement_initiatives">
+      <header>Implement initiatives</header>
+      <p>After you received support from stakeholders you can start implementation of your initiatives. Project management and change management are common practices that can help you to sucessfully implement your initiatives.</p>
+    </section>
+    <section class="main-section" id="Achieve_and_report_results">
+      <header>Achieve and report results</header>
+      <p>Finally after implementing your initiatives you claim savings that would contribute toward your STI's. There are three major types of savings:</p>
+      <p style="margin: 0px 5px">- Price. In that case you calculate savings from baseline price. However the baseline price can be defined in different way:</p>
+      <code>Savings = New price - Historic price</code>
+      <code>Savings = New price - Budget price</code>
+     <code>Savings = New price - Average price of suppliers quotations</code>
+      <p style="margin: 0px 5px">- E2E. In that case you calculate savings as a difference between initial spend and new spend after your initiative is implemented.</p>
+      <code>Savings = New total spend - Original spend</code>
+      <p style="margin: 0px 5px">- Sale of assets. Although we look for cost savings sale of unutilised assets is also counted. In that case you calculate savings between selling price and book value.</p>
+      <code>Savings = Revenue from sale - Book value</code>
+    </section>
+  </main>
+</body>
+      
