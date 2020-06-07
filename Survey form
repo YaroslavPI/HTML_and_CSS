@@ -1,1 +1,121 @@
 <!---Template of a survey page to collect inputs from users. As an example I used survey abour capabilities that team want to develop in area of professional and business services-->
+
+<head>
+  <style>
+    body {
+      font-family: 'Poppins';
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #f3f3f3;
+      background: #1b1b32;
+      background-image: linear-gradient (115deg, rgba (58,158,158,0.8), rgba (136,136, 206, 0.7)),
+        url('https://raw.githubusercontent.com/YaroslavPI/HTML_and_CSS/master/Survey%20form%20background.jpg');
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+    #title {
+      margin: 35px 7px;
+    }
+    #description {
+      margin: 0px 7px;
+    }
+    #survey-form {
+      padding: 2.5rem;
+      box-sizing: border-box;
+    }
+    #name {
+      margin: 5px 7px;
+      width: 200px;
+    }
+    #email {
+      margin: 5px 7px;
+      width: 200px;
+    }
+    #number {
+      margin: 5px 17px;
+      width: 200px;
+    }
+    #name-label {
+      margin: 5px 7px;
+    }
+    #email-label {
+      margin: 5px 7px;
+    }
+    #number-label {
+      margin: 5px 7px 0px;
+    }
+    #capabilities-label {
+      margin: 5px 7px;
+    }
+    #dropdown {
+      margin: 5px 7px;
+      width: 200px;
+    }
+    #radio-button {
+      margin: 5px 7px;
+    }
+    #checkbox-button {
+      margin: 5px 7px;
+    }
+    #comments {
+      margin: 5px 7px;
+      width: 200 px;
+    }
+    #submit {
+      margin: 5px 7px;
+    }
+    p {
+      margin: 5px 7px 5px;
+    }
+  </style>
+</head>
+
+<body> 
+  <h1 id="title">Professional and Business Services (P&BS) Capabilities</h1>
+  <p id="description">Main purpose of this form is to understand which P&BS capabilities you want to develop. We will use results of that form to organize trainings for you later this year</p>
+  <br>
+  <p>Please enter the following information:</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Please enter your name" required>
+    <br>
+    <label id="email-label" for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Please type your email address" required>
+    <br>
+    <label id="number-label" for="number">Age</label>
+    <input type="number" name="age" id="number" placeholder="Please enter your age" min="0" max="120">
+    <br>
+    <label id="capabilities-label" for="number">Capabilities</label>
+    <select type="" id="dropdown" name="capabilities" required>
+      <option disabled selected value>Select applicable capability</option>
+      <option name="analysis">Analysis</option>
+      <option name="opportunity identification">Opportunity identification</option>
+      <option name="stakeholder engagement">Stakeholder engagement</option>
+      <option name="delivery">Project management and implementation</option>
+      <option name="savings claim">Savings claim</option>
+    </select>
+    <br>
+    <p>What is your current level of capabilities?</p>
+    <input name="current level" type="radio" value="Advanced" id="radio-button" checked>
+    Advanced
+    <input name="current level" type="radio" value="Intermidiate" id="radio-button">
+    Intermidiate
+    <input name="current level" type="radio" value="Beginner" id="radio-button">
+    Beginner
+    <p>Which of those categories you want to get to know more about?</p>
+    <input name="category" type="checkbox" value="facility services" id="checkbox-button">
+    Facility services
+    <input name="category" type="checkbox" value="professional services" id="checkbox-button">
+    Professional services
+    <input name="category" type="checkbox" value="HR and Travel" id="checkbox-button">
+    HR and Travel
+    <input name="category" type="checkbox" value="ICT" id="checkbox-button">
+    ICT
+    <p>Please leave your comments here:</p>
+    <textarea id="comments" placeholder="Comments"></textarea>
+    <br>
+    <button type="submit" id="submit"> Submit</button>  
+  </form>
+</body> 
